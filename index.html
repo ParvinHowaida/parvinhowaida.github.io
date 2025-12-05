@@ -3,272 +3,214 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Parvin Howaida — SEO Content Writer & Digital Content Specialist</title>
-<meta name="description" content="Portfolio of Parvin Howaida, SEO content writer specializing in keyword-driven content, long-form SEO, and digital storytelling." />
-<meta name="author" content="Parvin Howaida" />
-<link rel="icon" href="data:;base64,iVBORw0KGgo=">
-
+<title>Parvin Howaida — Portfolio (visual)</title>
+<meta name="description" content="Parvin Howaida — SEO content writer. Portfolio, projects, certificates and downloadable CV." />
 <style>
-  :root {
-    --bg: #f9fafb;
-    --panel: #ffffff;
-    --text: #1f2937;
-    --muted: #6b7280;
-    --accent: #0284c7;
-    --radius: 14px;
-    font-family: Inter, system-ui, sans-serif;
-    color-scheme: light;
+  :root{
+    --bg:#fafafa; --card:#ffffff; --muted:#6b7280; --accent:#0077b6; --radius:12px;
+    --thumb-w:320px; --thumb-h:180px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   }
+  body{margin:0; background:linear-gradient(180deg,#f6fbff,#fafafa); color:#0f1724; padding:28px;}
+  .wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:28px}
+  .card{background:var(--card);border-radius:var(--radius);padding:18px;box-shadow:0 8px 22px rgba(12,18,28,0.06);border:1px solid #e6eef6}
+  .photo{display:flex;justify-content:center;margin-bottom:10px}
+  .photo img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #eef6fb}
+  h1{margin:6px 0 2px;font-size:20px}
+  .role{color:var(--muted);margin-bottom:12px;font-size:13px}
+  .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 12px;border-radius:8px;text-decoration:none;font-weight:600;margin-top:12px}
+  .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .skill{background:#f1f7fb;border-radius:999px;padding:6px 10px;color:var(--muted);font-size:12px;border:1px solid #e6f2fb}
 
-  body {
-    margin: 0;
-    background: var(--bg);
-    padding: 28px;
-    color: var(--text);
+  /* main panel */
+  main{min-height:320px}
+  .panel{background:var(--card);border-radius:var(--radius);padding:22px;box-shadow:0 8px 22px rgba(12,18,28,0.06);border:1px solid #e6eef6}
+  h2{margin:0 0 10px;font-size:18px}
+  .lead{color:var(--muted);margin-bottom:14px}
+  .grid-portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+  .proj{
+    background:#fbfeff;border-radius:10px;overflow:hidden;border:1px solid #eef6fb;
+    transition:transform .18s ease, box-shadow .18s ease;
   }
+  .proj:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(12,18,28,0.08)}
+  .thumb{width:100%;height:0;padding-bottom:56.25%;position:relative;background:linear-gradient(135deg,#e6f7ff,#f6fbff)}
+  .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .thumb .placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted);font-size:20px}
+  .caption{padding:12px 14px}
+  .caption a{color:var(--accent);text-decoration:none;font-weight:600}
+  .caption p{margin:6px 0 0;color:var(--muted);font-size:13px}
 
-  .wrap {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 28px;
-  }
+  /* certificates gallery */
+  .cert-grid{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+  .cert{width:150px;border-radius:8px;border:1px solid #eef6fb;overflow:hidden;background:#fff}
+  .cert img{width:100%;height:100px;object-fit:cover;display:block}
+  .cert .ctitle{padding:8px;font-size:13px;color:var(--muted)}
 
-  /* Sidebar */
-  .card {
-    background: var(--panel);
-    border-radius: var(--radius);
-    padding: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    border: 1px solid #e5e7eb;
-  }
-
-  .photo {
-    text-align: center;
-    margin-bottom: 12px;
-  }
-
-  .photo img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #e5e7eb;
-  }
-
-  h1 {
-    margin: 8px 0 4px 0;
-    font-size: 20px;
-  }
-
-  .role {
-    font-size: 14px;
-    color: var(--muted);
-    margin-bottom: 14px;
-  }
-
-  .contact {
-    font-size: 14px;
-    color: var(--muted);
-    margin-bottom: 16px;
-  }
-
-  .contact a { color: var(--accent); text-decoration: none; }
-
-  .pill {
-    background: #e0f2fe;
-    color: var(--accent);
-    padding: 6px 12px;
-    border-radius: 999px;
-    font-size: 13px;
-    display: inline-block;
-    margin-bottom: 14px;
-    font-weight: 600;
-  }
-
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-
-  .skill {
-    background: #f3f4f6;
-    padding: 8px 10px;
-    border-radius: 999px;
-    font-size: 12px;
-    color: var(--muted);
-    border: 1px solid #e5e7eb;
-  }
-
-  .btn {
-    background: var(--accent);
-    color: white;
-    padding: 10px 14px;
-    border-radius: 8px;
-    font-size: 14px;
-    display: inline-block;
-    margin-top: 16px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  /* Main Panel */
-  .panel {
-    background: var(--panel);
-    border-radius: var(--radius);
-    padding: 24px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-    border: 1px solid #e5e7eb;
-  }
-
-  .section {
-    margin-bottom: 28px;
-  }
-
-  h2 {
-    margin: 0 0 8px 0;
-    font-size: 18px;
-  }
-
-  .lead {
-    color: var(--muted);
-    font-size: 15px;
-    margin-bottom: 16px;
-  }
-
-  .meta {
-    color: var(--muted);
-    font-size: 14px;
-    margin-bottom: 8px;
-  }
-
-  ul.clean {
-    margin-top: 4px;
-    color: var(--muted);
-    line-height: 1.5;
-  }
-
-  .portfolio a {
-    display: block;
-    margin-bottom: 6px;
-    color: var(--accent);
-    text-decoration: none;
-  }
-  .portfolio a:hover {
-    text-decoration: underline;
-  }
-
-  footer {
-    text-align: center;
-    color: var(--muted);
-    font-size: 13px;
-    margin-top: 14px;
-  }
-
-  @media (max-width: 900px) {
-    .wrap { grid-template-columns: 1fr; }
-  }
+  /* responsive */
+  @media (max-width:900px){.wrap{grid-template-columns:1fr}.photo img{width:100px;height:100px}}
 </style>
 </head>
-
 <body>
-<div class="wrap">
+  <div class="wrap">
+    <!-- LEFT -->
+    <aside class="card" aria-label="profile">
+      <div class="photo"><img src="Picture12.png" alt="Parvin Howaida"></div>
+      <h1>Parvin Howaida</h1>
+      <div class="role">SEO Content Writer & Digital Content Specialist</div>
 
-  <!-- Sidebar -->
-  <aside class="card">
-    <div class="photo">
-      <img src="Picture12.png" alt="Parvin Howaida portrait">
-    </div>
-
-    <h1>Parvin Howaida</h1>
-    <div class="role">SEO Content Writer & Digital Content Specialist</div>
-
-    <div class="contact">
-      <div>Email: <a href="mailto:p.howaida@gmail.com">p.howaida@gmail.com</a></div>
-      <div>Phone: +46 760 603 963</div>
-      <div>Location: Germany</div>
-    </div>
-
-    <div class="pill">SEO • Copywriting • Content Strategy</div>
-
-    <strong>Core Skills</strong>
-    <div class="skills">
-      <span class="skill">SEO Writing</span>
-      <span class="skill">Keyword Research</span>
-      <span class="skill">SERP Analysis</span>
-      <span class="skill">On-Page SEO</span>
-      <span class="skill">Content Strategy</span>
-      <span class="skill">Python</span>
-    </div>
-
-    <a class="btn" href="CV_Parvin Howaida_SEO.pdf" download>Download CV (PDF)</a>
-  </aside>
-
-  <!-- Main -->
-  <main class="panel">
-
-    <div class="section">
-      <h2>About</h2>
-      <p class="lead">
-        SEO content writer with a focus on long-form content, product guides, and human-friendly technical writing.
-        Experienced in writing high-ranking articles for technology, LED systems, home improvement, and consumer electronics.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Experience</h2>
-      <div class="meta"><strong>SEO Content Writer — AzarPixel & SinaPlug (USA)</strong> | May 2024 – Present</div>
-      <ul class="clean">
-        <li>Write SEO-optimized long-form content and product pages using SERP & competitor analysis.</li>
-        <li>Optimize metadata, structure, readability, and internal linking.</li>
-        <li>Increase brand authority through research-backed content.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Portfolio</h2>
-
-      <div class="portfolio">
-        <strong>AzarPixel</strong>
-        <a href="https://www.azarpixel.com/top-10-speaker-brands/" target="_blank">Top 10 Speaker Brands</a>
-        <a href="https://www.azarpixel.com/transparent-led-displays/" target="_blank">Transparent LED Displays</a>
-        <a href="https://www.azarpixel.com/what-are-ptz-cameras/" target="_blank">What Are PTZ Cameras?</a>
-        <a href="https://www.azarpixel.com/fix-color-distortion-in-projector/" target="_blank">Fix Color Distortion in Projector</a>
-        <a href="https://www.azarpixel.com/moving-head-lights-spot-wash-beam/" target="_blank">Moving Head Lights — Spot/Wash/Beam</a>
-
-        <br><strong>SinaPlug</strong>
-        <a href="https://www.sinaplug.com/blogs/a/meanwell-lrs-rsp-power-supplies" target="_blank">Meanwell LRS/RSP Power Supplies</a>
-        <a href="https://www.sinaplug.com/blogs/a/choosing-video-switcher-for-live-streaming" target="_blank">Choosing a Video Switcher</a>
-        <a href="https://www.sinaplug.com/blogs/a/best-led-video-processor-brands" target="_blank">Best LED Video Processor Brands</a>
-        <a href="https://www.sinaplug.com/blogs/a/maximize-led-screen-lifespan" target="_blank">Maximize LED Screen Lifespan</a>
-        <a href="https://www.sinaplug.com/blogs/a/best-led-power-supply-brands" target="_blank">Best LED Power Supply Brands</a>
-        <a href="https://www.sinaplug.com/blogs/a/video-wall-controllers-for-commercial-use" target="_blank">Video Wall Controllers</a>
-
-        <br><strong>AzarNinja</strong>
-        <a href="https://azarninja.com/best-home-security-cameras-of-2025/" target="_blank">Best Home Security Cameras (2025)</a>
-        <a href="https://azarninja.com/install-smart-doorbell-camera/" target="_blank">Install Smart Doorbell Camera</a>
-        <a href="https://azarninja.com/tv-mount-installation-cost/" target="_blank">TV Mount Installation Cost</a>
-        <a href="https://azarninja.com/how-to-install-a-garage-door-opener/" target="_blank">Install a Garage Door Opener</a>
+      <div style="font-size:13px;color:#334155">
+        <div>Email: <a href="mailto:p.howaida@gmail.com">p.howaida@gmail.com</a></div>
+        <div>Phone: +46 760 603 963</div>
+        <div>Location: Germany</div>
       </div>
-    </div>
 
-    <div class="section">
-      <h2>Certificates</h2>
-      <div class="portfolio">
-        <a href="Alison_Certificate-5231-17476218.pdf" target="_blank">Essential Tips for Copywriting — Alison</a>
-        <a href="Alison_Certificate-5559-17476218.pdf" target="_blank">Copywriting Mastery — Alison</a>
-        <a href="OxforfHomeStudy.pdf" target="_blank">AI for SEO-Optimized Content Writing — Oxford</a>
+      <div class="skills" aria-hidden="false">
+        <span class="skill">SEO Writing</span>
+        <span class="skill">On-Page SEO</span>
+        <span class="skill">Keyword Research</span>
+        <span class="skill">SERP Analysis</span>
+        <span class="skill">Content Strategy</span>
       </div>
-    </div>
 
-    <footer>
-      © Parvin Howaida — Portfolio  
-    </footer>
+      <a class="btn" href="CV_Parvin Howaida_SEO.pdf" download>Download CV (PDF)</a>
 
-  </main>
+      <div style="margin-top:16px;color:var(--muted);font-size:13px">Certificates</div>
+      <div class="cert-grid" role="list">
+        <!-- certificate cards: expects cert_thumb_<id>.png or fallback to Picture1.png -->
+        <a class="cert" href="Alison_Certificate-5231-17476218.pdf" target="_blank" rel="noopener">
+          <img src="cert_thumb_5231.png" alt="Essential Tips for Copywriting" onerror="this.src='Picture1.png'">
+          <div class="ctitle">Essential Tips — Alison</div>
+        </a>
 
-</div>
+        <a class="cert" href="Alison_Certificate-5559-17476218.pdf" target="_blank" rel="noopener">
+          <img src="cert_thumb_5559.png" alt="Copywriting Mastery" onerror="this.src='Picture1.png'">
+          <div class="ctitle">Copywriting Mastery — Alison</div>
+        </a>
+
+        <a class="cert" href="OxforfHomeStudy.pdf" target="_blank" rel="noopener">
+          <img src="cert_thumb_oxford.png" alt="Oxford Home Study" onerror="this.src='Picture1.png'">
+          <div class="ctitle">AI for SEO — Oxford</div>
+        </a>
+      </div>
+    </aside>
+
+    <!-- RIGHT -->
+    <main>
+      <section class="panel">
+        <h2>About</h2>
+        <p class="lead">SEO content writer experienced in long-form articles, product pages and technical content, with a focus on SERP-driven research and user-first copy. Below are visual snapshots of projects and certificates — click to open.</p>
+
+        <div class="section">
+          <h2>Portfolio — visual gallery</h2>
+
+          <div class="grid-portfolio" id="portfolio-grid">
+            <!-- Example project (will look for thumb files, fallback shows initials) -->
+            <!-- Use slug names described below (thumb_<slug>.png) -->
+            <div class="proj">
+              <div class="thumb">
+                <img src="thumb_azarpixel_top10.png" alt="Top 10 Speaker Brands" onerror="this.style.display='none'">
+                <div class="placeholder" aria-hidden="true">Top 10<br>Speaker</div>
+              </div>
+              <div class="caption">
+                <a href="https://www.azarpixel.com/top-10-speaker-brands/" target="_blank">Top 10 Speaker Brands</a>
+                <p class="meta">AzarPixel — article, product roundup</p>
+              </div>
+            </div>
+
+            <div class="proj">
+              <div class="thumb">
+                <img src="thumb_azarpixel_transparent_led.png" alt="Transparent LED Displays" onerror="this.style.display='none'">
+                <div class="placeholder">Transparent<br>LED</div>
+              </div>
+              <div class="caption">
+                <a href="https://www.azarpixel.com/transparent-led-displays/" target="_blank">Transparent LED Displays</a>
+                <p class="meta">AzarPixel — product explainer</p>
+              </div>
+            </div>
+
+            <div class="proj">
+              <div class="thumb">
+                <img src="thumb_azarpixel_ptz.png" alt="PTZ Cameras" onerror="this.style.display='none'">
+                <div class="placeholder">PTZ</div>
+              </div>
+              <div class="caption">
+                <a href="https://www.azarpixel.com/what-are-ptz-cameras/" target="_blank">What Are PTZ Cameras?</a>
+                <p class="meta">AzarPixel — technical explainer</p>
+              </div>
+            </div>
+
+            <!-- SinaPlug projects -->
+            <div class="proj">
+              <div class="thumb">
+                <img src="thumb_sinaplug_meanwell.png" alt="Meanwell Power Supplies" onerror="this.style.display='none'">
+                <div class="placeholder">Meanwell</div>
+              </div>
+              <div class="caption">
+                <a href="https://www.sinaplug.com/blogs/a/meanwell-lrs-rsp-power-supplies" target="_blank">Meanwell LRS/RSP Power Supplies</a>
+                <p class="meta">SinaPlug — product guide</p>
+              </div>
+            </div>
+
+            <div class="proj">
+              <div class="thumb">
+                <img src="thumb_sinaplug_video_processor.png" alt="LED Video Processors" onerror="this.style.display='none'">
+                <div class="placeholder">Video<br>Processor</div>
+              </div>
+              <div class="caption">
+                <a href="https://www.sinaplug.com/blogs/a/best-led-video-processor-brands" target="_blank">Best LED Video Processor Brands</a>
+                <p class="meta">SinaPlug — comparison piece</p>
+              </div>
+            </div>
+
+            <!-- AzarNinja -->
+            <div class="proj">
+              <div class="thumb">
+                <img src="thumb_azarninja_cameras.png" alt="Home Security Cameras" onerror="this.style.display='none'">
+                <div class="placeholder">Home<br>Cameras</div>
+              </div>
+              <div class="caption">
+                <a href="https://azarninja.com/best-home-security-cameras-of-2025/" target="_blank">Best Home Security Cameras (2025)</a>
+                <p class="meta">AzarNinja — buyer's guide</p>
+              </div>
+            </div>
+
+            <div class="proj">
+              <div class="thumb">
+                <img src="thumb_azarninja_garage.png" alt="Garage Door Opener" onerror="this.style.display='none'">
+                <div class="placeholder">Garage<br>Opener</div>
+              </div>
+              <div class="caption">
+                <a href="https://azarninja.com/how-to-install-a-garage-door-opener/" target="_blank">How to Install a Garage Door Opener</a>
+                <p class="meta">AzarNinja — DIY guide</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Certificates</h2>
+          <p class="lead">Click any thumbnail to view or download the original certificate PDF.</p>
+          <!-- already in left side, but repeat larger if wanted -->
+        </div>
+
+        <footer style="margin-top:6px;color:var(--muted)">© Parvin Howaida — Portfolio</footer>
+      </section>
+    </main>
+  </div>
+
+<script>
+  // No JS required to show thumbnails — images are loaded by <img>.
+  // Add thumbnails to repo with the filenames below and they will display automatically:
+  // Certificates: cert_thumb_5231.png  cert_thumb_5559.png  cert_thumb_oxford.png
+  // Portfolio thumbnails:
+  // thumb_azarpixel_top10.png
+  // thumb_azarpixel_transparent_led.png
+  // thumb_azarpixel_ptz.png
+  // thumb_sinaplug_meanwell.png
+  // thumb_sinaplug_video_processor.png
+  // thumb_azarninja_cameras.png
+  // thumb_azarninja_garage.png
+</script>
 </body>
 </html>
