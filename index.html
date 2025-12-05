@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Parvin Howaida — Digital Content Specialist & SEO Writer</title>
+<meta name="description" content="Parvin Howaida — SEO content writer, copywriter and digital content specialist. Portfolio, experience and certificates." />
+<meta name="author" content="Parvin Howaida" />
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+<!-- Basic styling — single-file, no external assets -->
+<style>
+  :root{
+    --bg:#f7fbfd;
+    --panel:#ffffff;
+    --muted:#556077;
+    --accent:#1177ff;
+    --glass: rgba(17,119,255,0.06);
+    --radius:12px;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color-scheme: light;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh;
+    background: linear-gradient(180deg,#eef7ff 0%, #f7fbfd 50%);
+    padding:28px;
+    color:#102033;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+  }
+  .wrap{
+    max-width:1100px; margin:0 auto;
+    display:grid; grid-template-columns: 320px 1fr; gap:28px;
+    align-items:start;
+  }
+  /* sidebar */
+  .card{
+    background:var(--panel);
+    border-radius:var(--radius);
+    padding:20px;
+    box-shadow: 0 8px 28px rgba(16,32,51,0.06);
+    border:1px solid rgba(16,32,51,0.04);
+  }
+  .photo{
+    width:100%; height:320px; border-radius:10px; overflow:hidden;
+    background:linear-gradient(180deg,var(--accent), #60a5fa);
+    display:flex; align-items:center; justify-content:center; margin-bottom:12px;
+  }
+  .photo img{width:100%; height:100%; object-fit:cover; display:block}
+  h1.name{font-size:20px; margin:0 0 4px 0}
+  .subtitle{font-size:13px; color:var(--muted); margin:0 0 12px 0}
+  .contact{font-size:14px; color:var(--muted); margin-bottom:12px}
+  .pill{display:inline-block;padding:8px 12px;border-radius:999px;background:var(--glass); color:var(--accent); font-weight:600; margin:8px 0}
+
+  .skills{display:flex;flex-wrap:wrap; gap:8px; margin-top:10px}
+  .skill{background:#f3f8ff;padding:8px 10px;border-radius:999px;font-size:12px;color:var(--muted);border:1px solid rgba(17,119,255,0.06)}
+
+  .download{display:flex; gap:8px; margin-top:14px}
+  a.btn{display:inline-flex;align-items:center; gap:8px;padding:10px 12px;border-radius:8px;background:linear-gradient(90deg, #ffffff, #f3f8ff);text-decoration:none;color:var(--accent);border:1px solid rgba(17,119,255,0.08);font-weight:600;font-size:13px}
+
+  /* main area */
+  main{min-height:320px}
+  .profile{
+    background:var(--panel); padding:20px;border-radius:var(--radius);
+    box-shadow: 0 10px 30px rgba(16,32,51,0.06);
+    border:1px solid rgba(16,32,51,0.03);
+  }
+  .lead{color:var(--muted); margin:0 0 14px 0; font-size:15px}
+  .section{margin-bottom:18px}
+  .section h2{margin:0 0 8px 0; font-size:16px; color:#0b2540}
+  .meta{font-size:14px; color:var(--muted); margin-bottom:8px}
+  .job{padding:12px;border-radius:10px;background:#fbfdff;border:1px solid rgba(16,32,51,0.02); margin-bottom:10px}
+  .job h3{margin:0;font-size:14px}
+  ul.clean{margin:0 0 0 18px; color:var(--muted)}
+  .cert-grid{display:flex; gap:12px; flex-wrap:wrap}
+  .cert{background:#ffffff;border-radius:10px;padding:10px;border:1px solid rgba(16,32,51,0.03); width:calc(50% - 6px); display:flex; gap:10px; align-items:center}
+  .cert img{width:68px; height:48px; object-fit:cover; border-radius:6px; border:1px solid rgba(16,32,51,0.03)}
+  .cert .meta{font-size:13px}
+  .portfolio a{display:block;color:var(--accent);text-decoration:none;margin-bottom:6px}
+  .refs{font-size:13px; color:var(--muted)}
+  footer{font-size:13px; color:var(--muted); margin-top:16px; text-align:center}
+
+  /* responsive */
+  @media (max-width:900px){
+    .wrap{grid-template-columns:1fr; padding:0 12px}
+    .photo{height:220px}
+    .cert{width:100%}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- SIDEBAR -->
+    <aside class="card" aria-label="Profile card">
+      <div class="photo" aria-hidden="false">
+        <!-- profile image — uses uploaded file Picture12.png -->
+        <img src="Picture12.png" alt="Parvin Howaida — portrait photo" />
+      </div>
+
+      <h1 class="name">Parvin Howaida</h1>
+      <div class="subtitle">Digital Content Specialist & SEO Writer</div>
+
+      <div class="contact">
+        <div><strong>Phone:</strong> +46 760 603 963</div>
+        <div><strong>Email:</strong> <a href="mailto:p.howaida@gmail.com">p.howaida@gmail.com</a></div>
+        <div><strong>Location:</strong> Germany</div>
+      </div>
+
+      <div class="pill" aria-hidden="true">SEO • Copywriting • Storytelling</div>
+
+      <strong style="display:block; margin-top:10px;">Core skills</strong>
+      <div class="skills" role="list">
+        <span class="skill">SEO Writing</span>
+        <span class="skill">Copywriting</span>
+        <span class="skill">SERP Analysis</span>
+        <span class="skill">Keyword Research</span>
+        <span class="skill">On-Page SEO</span>
+        <span class="skill">Content Strategy</span>
+        <span class="skill">Python</span>
+      </div>
+
+      <div class="download" role="group" aria-label="Download CV">
+        <a class="btn" href="Parvin_Howaida_CV.pdf" download>Download CV (PDF)</a>
+        <a class="btn" href="Parvin_Howaida_CV.docx" download>Download CV (DOCX)</a>
+      </div>
+
+      <div style="margin-top:12px; color:var(--muted)">
+        <strong>Languages</strong>
+        <div>English — Fluent • Persian — Native • German — Beginner</div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+      <section class="profile">
+        <p class="lead">I am an SEO content writer with strong expertise in keyword-driven writing, copywriting, and content optimization. I produce high-ranking articles, product descriptions, and long-form web content across technology, LED systems, home improvement, and consumer electronics. My background in physics and analytical research helps me translate technical content into clear, engaging narratives. I also work with multimedia — photography and short-form documentary storytelling — to create richer content experiences for audiences and clients.</p>
+
+        <div class="section" id="experience">
+          <h2>Professional Experience</h2>
+          <div class="job" role="article" aria-labelledby="job-azar">
+            <h3 id="job-azar">SEO Content Writer — AzarPixel & SinaPlug Company (USA)</h3>
+            <div class="meta">May 2024 – Present</div>
+            <ul class="clean">
+              <li>Produce SEO-optimized articles, guides, landing pages and product content from SERP-led keyword research.</li>
+              <li>Audit and optimize existing content for structure, readability, and ranking performance.</li>
+              <li>Run competitor research to find ranking opportunities and content gaps.</li>
+              <li>Collaborate with editors and marketing teams to deliver content aligned with brand voice and KPI goals.</li>
+              <li>Write long-form, research-backed pieces to build domain authority and improve organic traffic.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="section" id="education">
+          <h2>Education</h2>
+          <div class="meta"><strong>M.Sc. in Physics (Cosmology)</strong> — Alzahra University, Tehran, Iran (2018–2021)</div>
+          <div class="meta" style="font-style:italic;">Thesis: Classifying Galaxies from SKA Simulated Data Using Machine-Learning Algorithms</div>
+        </div>
+
+        <div class="section" id="certificates">
+          <h2>Selected Certifications</h2>
+          <div class="cert-grid" role="list">
+            <!-- Card 1 -->
+            <a class="cert" href="Alison_Certificate-5231-17476218.pdf" target="_blank" rel="noopener">
+              <img src="Alison_Certificate-5231-17476218.pdf" alt="Essential Tips for Copywriting — certificate thumbnail" onerror="this.src='Picture1.png'">
+              <div>
+                <div class="meta"><strong>Essential Tips for Copywriting</strong></div>
+                <div class="meta">Alison — 17 Sep 2025</div>
+              </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a class="cert" href="Alison_Certificate-5559-17476218.pdf" target="_blank" rel="noopener">
+              <img src="Alison_Certificate-5559-17476218.pdf" alt="Copywriting Mastery — certificate thumbnail" onerror="this.src='Picture1.png'">
+              <div>
+                <div class="meta"><strong>Copywriting Mastery: Key Concepts</strong></div>
+                <div class="meta">Alison — 27 Sep 2025</div>
+              </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a class="cert" href="OxforfHomeStudy.pdf" target="_blank" rel="noopener">
+              <img src="OxforfHomeStudy.pdf" alt="Oxford Home Study Centre — enrollment confirmation" onerror="this.src='Picture1.png'">
+              <div>
+                <div class="meta"><strong>AI for SEO-Optimized Content Writing</strong></div>
+                <div class="meta">Oxford Home Study Centre — Enrolled (8 Oct 2025)</div>
+              </div>
+            </a>
+          </div>
+
+          <div style="margin-top:8px; color:var(--muted); font-size:13px">
+            Certificates are linked to the original PDFs uploaded in this repository (click to open or download).  [oai_citation:3‡Alison_Certificate-5231-17476218.pdf](sediment://file_00000000d860720a9d8bfa47cbd13b86)  [oai_citation:4‡Alison_Certificate-5559-17476218.pdf](sediment://file_000000007e04720a8403092c4343b853)  [oai_citation:5‡OxforfHomeStudy.pdf](sediment://file_00000000c438720aa912fdeeaa6b5f9b)
+          </div>
+        </div>
+
+        <div class="section" id="portfolio">
+          <h2>Portfolio (selected)</h2>
+          <div class="portfolio">
+            <a href="https://www.azarpixel.com/top-10-speaker-brands/" target="_blank" rel="noopener">Top 10 Speaker Brands — AzarPixel</a>
+            <a href="https://www.azarpixel.com/transparent-led-displays/" target="_blank" rel="noopener">Transparent LED Displays — AzarPixel</a>
+            <a href="https://www.sinaplug.com/blogs/a/meanwell-lrs-rsp-power-supplies" target="_blank" rel="noopener">Meanwell LRS/RSP Power Supplies — SinaPlug</a>
+            <a href="https://azarninja.com/best-home-security-cameras-of-2025/" target="_blank" rel="noopener">Best Home Security Cameras (2025) — AzarNinja</a>
+          </div>
+        </div>
+
+        <div class="section" id="tools">
+          <h2>Tools & Technical</h2>
+          <div class="meta">Microsoft Office, LaTeX, Photoshop, CapCut — ChatGPT (GPT-4), Grammarly, Canva, Copy.ai, Wordtune — Python</div>
+        </div>
+
+        <div class="section" id="refs">
+          <h2>References</h2>
+          <div class="refs">
+            Saeed Jafari — External Relations Manager, UNESCO — saeed.jafari@spacegeneration.org<br>
+            Mohammad Javad Shahhoseini — Chalmers & Onsala — mj.shahhoseini@chalmers.se • +46 736 415 264<br>
+            Elham Salmanzadeh — Andromeda Daily — salmanzadeheli@gmail.com
+          </div>
+        </div>
+
+        <footer>
+          <div>Painting • Photography • Documentary Storytelling</div>
+          <div style="margin-top:6px; color:var(--muted);">Seed #00001B3</div>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <!-- Small accessibility script: swap PDF thumbnails gracefully if browser can't render PDF as image -->
+  <script>
+    // Some browsers won't show PDF via <img src="file.pdf">. Use fallback thumbnails if needed.
+    document.querySelectorAll('.cert img').forEach(img=>{
+      img.onerror = function(){ this.src = 'Picture1.png'; }
+      // If the file is a PDF and browser does not show, onerror will replace with Picture1.png
+    });
+  </script>
+</body>
+</html>
