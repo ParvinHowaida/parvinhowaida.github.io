@@ -65,6 +65,31 @@
   .lead{color:var(--muted);font-size:15px;margin-bottom:14px}
   .section{margin-bottom:22px}
 
+  /* JOB HERO (new, bold, catchy) */
+  .job-hero{
+    display:flex; flex-direction:column; gap:10px;
+    padding:18px; border-radius:12px;
+    background: linear-gradient(90deg, rgba(11,132,255,0.06), rgba(4,191,176,0.03));
+    border:1px solid rgba(11,132,255,0.12);
+    box-shadow: 0 10px 30px rgba(11,132,255,0.06);
+    margin-bottom:12px;
+  }
+  .job-hero .title{
+    font-size:20px; font-weight:800; color:#052e40; letter-spacing:0.2px;
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+  }
+  .job-hero .comp{
+    font-size:14px; color:var(--accent); font-weight:700; background:rgba(11,132,255,0.08); padding:6px 10px; border-radius:8px;
+  }
+  .job-hero .tagline{color: #083a4a; font-weight:600; font-size:14px}
+  .job-hero .date-pill{margin-left:auto;background:#fff;padding:6px 10px;border-radius:999px;border:1px solid rgba(11,132,255,0.08);font-weight:700;color:var(--muted);font-size:13px}
+  .job-hero .bullets{margin:0;padding-left:18px;color:var(--muted);line-height:1.55}
+  .job-hero .bullets li{margin-bottom:8px; position:relative; padding-left:22px}
+  .job-hero .bullets li::before{
+    content: "✓"; position:absolute; left:0; top:0; color:var(--teal); font-weight:700;
+    font-size:14px; line-height:1;
+  }
+
   /* Portfolio gallery */
   .grid-portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
   .proj{background:#fff;border-radius:10px;border:1px solid #eef6fb;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
@@ -113,10 +138,6 @@
 
       <div style="margin-top:14px;color:var(--muted);font-size:13px"><strong>Certificates</strong></div>
       <div class="cert-grid" role="list">
-        <!-- For visual: prefer small PNG thumbnails named cert_thumb_5231.png etc.
-             If cert_thumb_X.png is absent the <img> will fail and the CSS placeholder still looks decent (we show fallback text).
-             Files expected: cert_thumb_5231.png, cert_thumb_5559.png, cert_thumb_oxford.png
-        -->
         <a class="cert-card" href="Alison_Certificate-5231-17476218.pdf" target="_blank" rel="noopener">
           <div class="cert-thumb"><img src="cert_thumb_5231.png" alt="Essential Tips for Copywriting" onerror="this.style.display='none'"><span class="ctext">ET</span></div>
           <div class="cert-meta">Essential Tips — Alison<br><small style="color:var(--muted)">17 Sep 2025</small></div>
@@ -142,20 +163,31 @@
 
         <div class="section" id="experience">
           <h2>Experience</h2>
-          <div style="margin-bottom:10px;color:var(--muted);font-size:13px"><strong>SEO Content Writer — AzarPixel & SinaPlug (USA)</strong> | May 2024 – Present</div>
-          <ul style="color:var(--muted);line-height:1.55;margin:0 0 8px 18px">
-            <li>Produce SEO-led articles, product pages and guides from SERP and competitor research.</li>
-            <li>Optimize on-page elements, metadata, structure, and internal linking to improve CTR and ranking signals.</li>
-            <li>Create long-form, research-backed content that increases organic traffic and domain authority.</li>
-          </ul>
 
-          <div style="margin-top:12px;color:var(--muted);font-size:13px"><strong>Other Experience</strong></div>
+          <!-- UPDATED HERO STYLE: big, catchy, bold -->
+          <div class="job-hero" role="article" aria-label="Main job">
+            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+              <div class="title">SEO Content Writer</div>
+              <div class="comp">AzarPixel &amp; SinaPlug (USA)</div>
+              <div class="date-pill">May 2024 – Present</div>
+            </div>
+            <div class="tagline">Driving organic growth with high-quality, SERP-led long-form content and product pages.</div>
+
+            <ul class="bullets">
+              <li>Produce SEO-led articles, product pages and comprehensive guides informed by SERP and competitor research.</li>
+              <li>Optimize on-page elements, metadata, information architecture and internal linking to improve CTR and ranking signals.</li>
+              <li>Create long-form, research-backed content that increases organic traffic, engagement and domain authority.</li>
+            </ul>
+          </div>
+          <!-- end job-hero -->
+
+          <div style="margin-top:12px;color:var(--muted);font-size:13px"><strong>Other Experiences</strong></div>
           <ul style="color:var(--muted);line-height:1.55;margin:6px 0 0 18px">
-            <li>Onsala Space Observatory & Chalmers — Content Creator & Science Guide (Jun 2024)</li>
+            <li>Onsala Space Observatory &amp; Chalmers — Content Creator &amp; Science Guide (June 2024)</li>
             <li>Heritage of the Sky Project — Exhibition Narrator (2019–2020)</li>
             <li>Pouya Mohaseb (Tehran) — Content Creator (2017–2019)</li>
             <li>Andromeda Team — Science Presenter (2014–2019)</li>
-            <li>Tesla Science Magazine — Editorial Board & Content Specialist (2014–2016)</li>
+            <li>Tesla Science Magazine — Editorial Board &amp; Content Specialist (2014–2016)</li>
           </ul>
         </div>
 
@@ -170,7 +202,6 @@
         <div class="section" id="portfolio">
           <h2>Portfolio — visual gallery</h2>
           <div class="grid-portfolio" id="portfolio-grid">
-
             <!-- AzarPixel -->
             <div class="proj">
               <div class="thumb">
@@ -287,7 +318,7 @@
           </div>
         </div>
 
-        <footer style="margin-top:8px;color:var(--muted)">© Parvin Howaida — Portfolio · Seed #00001BC</footer>
+        <footer style="margin-top:8px;color:var(--muted)">© Parvin Howaida — Portfolio · Seed #00001BD</footer>
       </section>
     </main>
   </div>
@@ -298,12 +329,10 @@
     document.addEventListener('DOMContentLoaded', ()=> {
       document.querySelectorAll('.thumb img, .cert-thumb img').forEach(img=>{
         img.addEventListener('load', () => {
-          // find placeholder sibling and hide
           const parent = img.closest('.thumb, .cert-thumb');
           if(parent){
             const ph = parent.querySelector('.placeholder');
             if(ph) ph.style.display = 'none';
-            // ensure img visible
             img.style.display = 'block';
           }
         });
