@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Parvin Howaida — SEO Content Writer & Digital Content Specialist</title>
-<meta name="description" content="Parvin Howaida — SEO content writer specializing in long-form SEO, product pages, and technical-to-human content. Portfolio, certificates, and CV." />
+<meta name="description" content="Parvin Howaida — SEO content writer specializing in long form SEO, product pages and technical to human content. Portfolio, certificates and CV." />
 <meta name="author" content="Parvin Howaida" />
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
@@ -16,20 +16,25 @@
     --accent:#0b84ff;
     --teal:#04bfb0;
     --radius:14px;
-    --soft-border:#e6eef6;
-    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+    --soft-border: #e6eef6;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color-scheme: light;
   }
+
   *{box-sizing:border-box}
   body{
-    margin:0;background:linear-gradient(180deg,#fbfdff,#f6f9fb);color:#0f1724;padding:28px;
-    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+    margin:0; background:linear-gradient(180deg,#fbfdff,#f6f9fb); color:#0f1724; padding:28px;
+    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
   }
-  .wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:28px}
+
+  .wrap{
+    max-width:1200px; margin:0 auto; display:grid; grid-template-columns:320px 1fr; gap:28px;
+  }
 
   /* SIDEBAR */
   .card{
-    background:var(--card);border-radius:var(--radius);padding:18px;border:1px solid var(--soft-border);
-    box-shadow:0 10px 30px rgba(16,32,51,0.04);
+    background:var(--card); border-radius:var(--radius); padding:18px; border:1px solid var(--soft-border);
+    box-shadow: 0 10px 30px rgba(16,32,51,0.04);
   }
   .photo{display:flex;justify-content:center;margin-bottom:12px}
   .photo img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 6px 18px rgba(16,32,51,0.06)}
@@ -38,109 +43,78 @@
   .contact{font-size:14px;color:var(--muted);line-height:1.45;margin-bottom:10px}
   .contact a{color:var(--accent);text-decoration:none}
   .pill{background:#eef9ff;color:var(--accent);padding:6px 12px;border-radius:999px;font-weight:600;font-size:13px;display:inline-block;margin:8px 0}
+
   .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
   .skill{background:#f3f8ff;padding:8px 10px;border-radius:999px;font-size:12px;color:var(--muted);border:1px solid #eef6fb}
-  .btn{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0cc2ff);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(11,132,255,0.12)}
 
-  /* LINKS */
-  .links{margin-top:18px}
-  .links a{display:block;color:var(--accent);font-size:14px;margin-bottom:6px;text-decoration:none;font-weight:600}
+  .btn{
+    display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent), #0cc2ff);color:#fff;text-decoration:none;font-weight:700;
+    box-shadow:0 6px 18px rgba(11,132,255,0.12);border:0;
+  }
+
+  .cert-grid{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+  .cert-card{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted);background:#fff;border-radius:8px;padding:6px;border:1px solid #eef6fb}
+  .cert-thumb{width:84px;height:60px;flex:0 0 84px;border-radius:6px;background:linear-gradient(135deg,#e6f7ff,#f3fbff); display:flex;align-items:center;justify-content:center;color:#90a5b6;font-weight:700;font-size:13px;overflow:hidden}
+  .cert-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .cert-meta{font-size:13px;color:var(--muted)}
 
   /* MAIN */
   main{min-height:400px}
   .panel{background:var(--card);border-radius:var(--radius);padding:22px;border:1px solid var(--soft-border);box-shadow:0 10px 30px rgba(16,32,51,0.04)}
   h2{margin:0 0 10px;font-size:18px}
-  .lead{color:var(--muted);font-size:15px;margin-bottom:14px;text-align:justify}
+  .lead{color:var(--muted);font-size:15px;margin-bottom:14px; text-align:justify}
   .section{margin-bottom:22px}
 
-  /* PORTFOLIO */
+  /* JOB HERO */
+  .job-hero{
+    display:flex; flex-direction:column; gap:10px;
+    padding:18px; border-radius:12px;
+    background: linear-gradient(90deg, rgba(11,132,255,0.06), rgba(4,191,176,0.03));
+    border:1px solid rgba(11,132,255,0.12);
+    box-shadow: 0 10px 30px rgba(11,132,255,0.06);
+    margin-bottom:12px;
+  }
+  .job-hero .title{
+    font-size:20px; font-weight:800; color:#052e40; letter-spacing:0.2px;
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+  }
+  .job-hero .comp{
+    font-size:14px; color:var(--accent); font-weight:700; background:rgba(11,132,255,0.08); padding:6px 10px; border-radius:8px;
+  }
+  .job-hero .tagline{color: #083a4a; font-weight:600; font-size:14px}
+  .job-hero .date-pill{margin-left:auto;background:#fff;padding:6px 10px;border-radius:999px;border:1px solid rgba(11,132,255,0.08);font-weight:700;color:var(--muted);font-size:13px}
+  .job-hero .bullets{margin:0;padding-left:18px;color:var(--muted);line-height:1.55}
+  .job-hero .bullets li{margin-bottom:8px; position:relative; padding-left:22px}
+  .job-hero .bullets li::before{
+    content: "✓"; position:absolute; left:0; top:0; color:var(--teal); font-weight:700;
+    font-size:14px; line-height:1;
+  }
+
+  /* Portfolio gallery */
   .grid-portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
   .proj{background:#fff;border-radius:10px;border:1px solid #eef6fb;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
   .proj:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(16,32,51,0.06)}
-  .thumb{position:relative;width:100%;height:0;padding-bottom:56.25%;background:linear-gradient(135deg,#eef9ff,#f7fbff)}
+  .thumb{position:relative;width:100%;height:0;padding-bottom:56.25%;background:linear-gradient(135deg,#eef9ff,#f7fbff);display:block}
   .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .thumb .placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;color:#9fb2c6;font-size:20px;text-align:center;padding:12px}
   .caption{padding:12px 14px;border-top:1px solid #f5f9fb}
   .caption a{color:var(--accent);text-decoration:none;font-weight:600}
-  .caption p{margin:6px 0 0;color:var(--muted);font-size:13px;text-align:justify}
+  .caption p{margin:6px 0 0;color:var(--muted);font-size:13px}
 
-  @media(max-width:900px){.wrap{grid-template-columns:1fr;padding:0 12px}.photo img{width:96px;height:96px}}
+  @media (max-width:900px){
+    .wrap{grid-template-columns:1fr;padding:0 12px}
+    .photo img{width:96px;height:96px}
+  }
 </style>
 </head>
 <body>
-<div class="wrap">
+  <div class="wrap">
+    <!-- SIDEBAR -->
+    <aside class="card" aria-label="Profile card">
+      <div class="photo"><img src="Picture12.png" alt="Parvin Howaida"></div>
+      <h1>Parvin Howaida</h1>
+      <div class="role">SEO Content Writer & Digital Content Specialist</div>
 
-  <!-- SIDEBAR -->
-  <aside class="card">
-    <div class="photo"><img src="Picture12.png" alt="Parvin Howaida"></div>
-    <h1>Parvin Howaida</h1>
-    <div class="role">SEO Content Writer & Digital Content Specialist</div>
-
-    <div class="contact">
-      <div><strong>Email:</strong> <a href="mailto:p.howaida@gmail.com">p.howaida@gmail.com</a></div>
-      <div><strong>Phone:</strong> +46 760 603 963</div>
-      <div><strong>Location:</strong> Germany</div>
-    </div>
-
-    <div class="pill">SEO · Copywriting · Content Strategy</div>
-
-    <strong style="display:block;margin-top:10px;color:var(--muted)">Core skills</strong>
-    <div class="skills">
-      <span class="skill">SEO Writing</span>
-      <span class="skill">On-Page SEO</span>
-      <span class="skill">Keyword Research</span>
-      <span class="skill">SERP Analysis</span>
-      <span class="skill">Content Strategy</span>
-      <span class="skill">Python</span>
-    </div>
-
-    <a class="btn" href="CV_Parvin_Howaida_SEO.pdf">Download CV</a>
-
-    <div class="links">
-      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-      <a href="https://www.researchgate.net" target="_blank">ResearchGate</a>
-      <a href="https://orcid.org" target="_blank">ORCID</a>
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
-    </div>
-  </aside>
-
-
-  <!-- MAIN -->
-  <main>
-    <div class="panel">
-      <h2>About Me</h2>
-      <p class="lead">
-        I am an SEO content writer and digital content specialist with a strong background in science communication, storytelling, and technical-to-human translation of complex concepts. I create long-form SEO articles, landing pages, product descriptions, and optimized web content that rank well, convert readers, and strengthen brand authority. My approach combines analytical research, keyword-driven strategy, and engaging narrative flow.
-      </p>
-
-      <h2>Portfolio</h2>
-      <div class="grid-portfolio">
-        <div class="proj">
-          <div class="thumb"><div class="placeholder">Project 1</div></div>
-          <div class="caption">
-            <a href="#" target="_blank">Sample SEO Article</a>
-            <p>A long-form SEO article optimized for competitive keywords.</p>
-          </div>
-        </div>
-
-        <div class="proj">
-          <div class="thumb"><div class="placeholder">Project 2</div></div>
-          <div class="caption">
-            <a href="#" target="_blank">Technical-to-Human Content</a>
-            <p>Explaining a technical topic in simple, reader-friendly language.</p>
-          </div>
-        </div>
-
-        <div class="proj">
-          <div class="thumb"><div class="placeholder">Project 3</div></div>
-          <div class="caption">
-            <a href="#" target="_blank">Product Page Copy</a>
-            <p>High-conversion product page written for e-commerce.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-</div>
-</body>
-</html>
+      <div class="contact">
+        <div><strong>Email:</strong> <a href="mailto:p.howaida@gmail.com">p.howaida@gmail.com</a></div>
+        <div><strong>Phone
