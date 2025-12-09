@@ -52,8 +52,14 @@
     box-shadow:0 6px 18px rgba(11,132,255,0.12);border:0;
   }
 
+  /* small button variant for links-list */
+  .btn-link{
+    display:inline-block;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent), #0cc2ff);color:#fff;text-decoration:none;font-weight:700;
+    box-shadow:0 6px 18px rgba(11,132,255,0.08);border:0;margin:6px 6px 0 0;font-size:13px;
+  }
+
   .links-list{margin-top:12px;font-size:14px}
-  .links-list a{display:block;color:var(--accent);text-decoration:none;margin:6px 0;font-weight:600}
+  .links-list a{display:inline-block;color:#fff;text-decoration:none;margin:6px 8px 0 0;font-weight:600}
 
   .cert-grid{display:flex;flex-direction:column;gap:10px;margin-top:14px}
   .cert-card{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted);background:#fff;border-radius:8px;padding:6px;border:1px solid #eef6fb}
@@ -139,12 +145,13 @@
 
       <a class="btn" href="CV_Parvin Howaida_SEO.pdf" download>Download CV (PDF)</a>
 
-      <!-- Added profile links as requested -->
+      <!-- Updated profile links: LinkedIn removed, YouTube added. Links styled like the CV button -->
       <div class="links-list" aria-label="Profiles">
-        <a href="https://scholar.google.com/citations?hl=en&user=kDotrPcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Parvin-Howaida-2?ev=hdr_xprf" target="_blank" rel="noopener">Research Gate</a>
-        <a href="https://orcid.org/my-orcid?orcid=0000-0001-5002-675X" target="_blank" rel="noopener">Orcid</a>
-        <a href="https://www.linkedin.com/in/parvinhowaida" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn-link" href="https://scholar.google.com/citations?hl=en&user=kDotrPcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+        <a class="btn-link" href="https://www.researchgate.net/profile/Parvin-Howaida-2?ev=hdr_xprf" target="_blank" rel="noopener">ResearchGate</a>
+        <a class="btn-link" href="https://orcid.org/my-orcid?orcid=0000-0001-5002-675X" target="_blank" rel="noopener">ORCID</a>
+        <!-- YouTube added in place of LinkedIn -->
+        <a class="btn-link" href="https://www.youtube.com/@Pari_in_Bookland" target="_blank" rel="noopener">YouTube — My YouTube Channel</a>
       </div>
 
       <div style="margin-top:14px;color:var(--muted);font-size:13px"><strong>Certificates</strong></div>
