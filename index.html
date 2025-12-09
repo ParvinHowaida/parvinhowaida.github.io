@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Parvin Howaida — SEO Content Writer & Digital Content Specialist</title>
-<meta name="description" content="Parvin Howaida — SEO content writer specializing in long form SEO, product pages and technical to human content. Portfolio, certificates and CV." />
+<meta name="description" content="Parvin Howaida — SEO content writer specializing in long-form SEO, product pages, and technical-to-human content. Portfolio, certificates, and CV." />
 <meta name="author" content="Parvin Howaida" />
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
@@ -16,25 +16,20 @@
     --accent:#0b84ff;
     --teal:#04bfb0;
     --radius:14px;
-    --soft-border: #e6eef6;
-    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    color-scheme: light;
+    --soft-border:#e6eef6;
+    font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
   }
-
   *{box-sizing:border-box}
   body{
-    margin:0; background:linear-gradient(180deg,#fbfdff,#f6f9fb); color:#0f1724; padding:28px;
-    -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    margin:0;background:linear-gradient(180deg,#fbfdff,#f6f9fb);color:#0f1724;padding:28px;
+    -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
   }
-
-  .wrap{
-    max-width:1200px; margin:0 auto; display:grid; grid-template-columns:320px 1fr; gap:28px;
-  }
+  .wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:28px}
 
   /* SIDEBAR */
   .card{
-    background:var(--card); border-radius:var(--radius); padding:18px; border:1px solid var(--soft-border);
-    box-shadow: 0 10px 30px rgba(16,32,51,0.04);
+    background:var(--card);border-radius:var(--radius);padding:18px;border:1px solid var(--soft-border);
+    box-shadow:0 10px 30px rgba(16,32,51,0.04);
   }
   .photo{display:flex;justify-content:center;margin-bottom:12px}
   .photo img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 6px 18px rgba(16,32,51,0.06)}
@@ -43,304 +38,109 @@
   .contact{font-size:14px;color:var(--muted);line-height:1.45;margin-bottom:10px}
   .contact a{color:var(--accent);text-decoration:none}
   .pill{background:#eef9ff;color:var(--accent);padding:6px 12px;border-radius:999px;font-weight:600;font-size:13px;display:inline-block;margin:8px 0}
-
   .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
   .skill{background:#f3f8ff;padding:8px 10px;border-radius:999px;font-size:12px;color:var(--muted);border:1px solid #eef6fb}
+  .btn{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#0cc2ff);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(11,132,255,0.12)}
 
-  .btn{
-    display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent), #0cc2ff);color:#fff;text-decoration:none;font-weight:700;
-    box-shadow:0 6px 18px rgba(11,132,255,0.12);border:0;
-  }
-
-  .cert-grid{display:flex;flex-direction:column;gap:10px;margin-top:14px}
-  .cert-card{display:flex;gap:10px;align-items:center;font-size:13px;color:var(--muted);background:#fff;border-radius:8px;padding:6px;border:1px solid #eef6fb}
-  .cert-thumb{width:84px;height:60px;flex:0 0 84px;border-radius:6px;background:linear-gradient(135deg,#e6f7ff,#f3fbff); display:flex;align-items:center;justify-content:center;color:#90a5b6;font-weight:700;font-size:13px;overflow:hidden}
-  .cert-thumb img{width:100%;height:100%;object-fit:cover;display:block}
-  .cert-meta{font-size:13px;color:var(--muted)}
+  /* LINKS */
+  .links{margin-top:18px}
+  .links a{display:block;color:var(--accent);font-size:14px;margin-bottom:6px;text-decoration:none;font-weight:600}
 
   /* MAIN */
   main{min-height:400px}
   .panel{background:var(--card);border-radius:var(--radius);padding:22px;border:1px solid var(--soft-border);box-shadow:0 10px 30px rgba(16,32,51,0.04)}
   h2{margin:0 0 10px;font-size:18px}
-  .lead{color:var(--muted);font-size:15px;margin-bottom:14px}
+  .lead{color:var(--muted);font-size:15px;margin-bottom:14px;text-align:justify}
   .section{margin-bottom:22px}
 
-  /* JOB HERO (new, bold, catchy) */
-  .job-hero{
-    display:flex; flex-direction:column; gap:10px;
-    padding:18px; border-radius:12px;
-    background: linear-gradient(90deg, rgba(11,132,255,0.06), rgba(4,191,176,0.03));
-    border:1px solid rgba(11,132,255,0.12);
-    box-shadow: 0 10px 30px rgba(11,132,255,0.06);
-    margin-bottom:12px;
-  }
-  .job-hero .title{
-    font-size:20px; font-weight:800; color:#052e40; letter-spacing:0.2px;
-    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-  }
-  .job-hero .comp{
-    font-size:14px; color:var(--accent); font-weight:700; background:rgba(11,132,255,0.08); padding:6px 10px; border-radius:8px;
-  }
-  .job-hero .tagline{color: #083a4a; font-weight:600; font-size:14px}
-  .job-hero .date-pill{margin-left:auto;background:#fff;padding:6px 10px;border-radius:999px;border:1px solid rgba(11,132,255,0.08);font-weight:700;color:var(--muted);font-size:13px}
-  .job-hero .bullets{margin:0;padding-left:18px;color:var(--muted);line-height:1.55}
-  .job-hero .bullets li{margin-bottom:8px; position:relative; padding-left:22px}
-  .job-hero .bullets li::before{
-    content: "✓"; position:absolute; left:0; top:0; color:var(--teal); font-weight:700;
-    font-size:14px; line-height:1;
-  }
-
-  /* Portfolio gallery */
+  /* PORTFOLIO */
   .grid-portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
   .proj{background:#fff;border-radius:10px;border:1px solid #eef6fb;overflow:hidden;transition:transform .18s ease,box-shadow .18s ease}
   .proj:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(16,32,51,0.06)}
-  .thumb{position:relative;width:100%;height:0;padding-bottom:56.25%;background:linear-gradient(135deg,#eef9ff,#f7fbff);display:block}
+  .thumb{position:relative;width:100%;height:0;padding-bottom:56.25%;background:linear-gradient(135deg,#eef9ff,#f7fbff)}
   .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .thumb .placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;color:#9fb2c6;font-size:20px;text-align:center;padding:12px}
   .caption{padding:12px 14px;border-top:1px solid #f5f9fb}
   .caption a{color:var(--accent);text-decoration:none;font-weight:600}
-  .caption p{margin:6px 0 0;color:var(--muted);font-size:13px}
+  .caption p{margin:6px 0 0;color:var(--muted);font-size:13px;text-align:justify}
 
-  /* small screens */
-  @media (max-width:900px){
-    .wrap{grid-template-columns:1fr;padding:0 12px}
-    .photo img{width:96px;height:96px}
-  }
+  @media(max-width:900px){.wrap{grid-template-columns:1fr;padding:0 12px}.photo img{width:96px;height:96px}}
 </style>
 </head>
 <body>
-  <div class="wrap">
-    <!-- SIDEBAR -->
-    <aside class="card" aria-label="Profile card">
-      <div class="photo"><img src="Picture12.png" alt="Parvin Howaida"></div>
-      <h1>Parvin Howaida</h1>
-      <div class="role">SEO Content Writer & Digital Content Specialist</div>
+<div class="wrap">
 
-      <div class="contact">
-        <div><strong>Email:</strong> <a href="mailto:p.howaida@gmail.com">p.howaida@gmail.com</a></div>
-        <div><strong>Phone:</strong> +46 760 603 963</div>
-        <div><strong>Location:</strong> Germany</div>
+  <!-- SIDEBAR -->
+  <aside class="card">
+    <div class="photo"><img src="Picture12.png" alt="Parvin Howaida"></div>
+    <h1>Parvin Howaida</h1>
+    <div class="role">SEO Content Writer & Digital Content Specialist</div>
+
+    <div class="contact">
+      <div><strong>Email:</strong> <a href="mailto:p.howaida@gmail.com">p.howaida@gmail.com</a></div>
+      <div><strong>Phone:</strong> +46 760 603 963</div>
+      <div><strong>Location:</strong> Germany</div>
+    </div>
+
+    <div class="pill">SEO · Copywriting · Content Strategy</div>
+
+    <strong style="display:block;margin-top:10px;color:var(--muted)">Core skills</strong>
+    <div class="skills">
+      <span class="skill">SEO Writing</span>
+      <span class="skill">On-Page SEO</span>
+      <span class="skill">Keyword Research</span>
+      <span class="skill">SERP Analysis</span>
+      <span class="skill">Content Strategy</span>
+      <span class="skill">Python</span>
+    </div>
+
+    <a class="btn" href="CV_Parvin_Howaida_SEO.pdf">Download CV</a>
+
+    <div class="links">
+      <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+      <a href="https://www.researchgate.net" target="_blank">ResearchGate</a>
+      <a href="https://orcid.org" target="_blank">ORCID</a>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    </div>
+  </aside>
+
+
+  <!-- MAIN -->
+  <main>
+    <div class="panel">
+      <h2>About Me</h2>
+      <p class="lead">
+        I am an SEO content writer and digital content specialist with a strong background in science communication, storytelling, and technical-to-human translation of complex concepts. I create long-form SEO articles, landing pages, product descriptions, and optimized web content that rank well, convert readers, and strengthen brand authority. My approach combines analytical research, keyword-driven strategy, and engaging narrative flow.
+      </p>
+
+      <h2>Portfolio</h2>
+      <div class="grid-portfolio">
+        <div class="proj">
+          <div class="thumb"><div class="placeholder">Project 1</div></div>
+          <div class="caption">
+            <a href="#" target="_blank">Sample SEO Article</a>
+            <p>A long-form SEO article optimized for competitive keywords.</p>
+          </div>
+        </div>
+
+        <div class="proj">
+          <div class="thumb"><div class="placeholder">Project 2</div></div>
+          <div class="caption">
+            <a href="#" target="_blank">Technical-to-Human Content</a>
+            <p>Explaining a technical topic in simple, reader-friendly language.</p>
+          </div>
+        </div>
+
+        <div class="proj">
+          <div class="thumb"><div class="placeholder">Project 3</div></div>
+          <div class="caption">
+            <a href="#" target="_blank">Product Page Copy</a>
+            <p>High-conversion product page written for e-commerce.</p>
+          </div>
+        </div>
       </div>
+    </div>
+  </main>
 
-      <div class="pill">SEO · Copywriting · Content Strategy</div>
-
-      <strong style="display:block;margin-top:10px;color:var(--muted)">Core skills</strong>
-      <div class="skills" role="list">
-        <span class="skill">SEO Writing</span>
-        <span class="skill">On Page SEO</span>
-        <span class="skill">Keyword Research</span>
-        <span class="skill">SERP Analysis</span>
-        <span class="skill">Content Strategy</span>
-        <span class="skill">Python</span>
-      </div>
-
-      <a class="btn" href="CV_Parvin Howaida_SEO.pdf" download>Download CV (PDF)</a>
-
-      <div style="margin-top:14px;color:var(--muted);font-size:13px"><strong>Certificates</strong></div>
-      <div class="cert-grid" role="list">
-        <a class="cert-card" href="Alison_Certificate-5231-17476218.pdf" target="_blank" rel="noopener">
-          <div class="cert-thumb"><img src="cert_thumb_5231.png" alt="Essential Tips for Copywriting" onerror="this.style.display='none'"><span class="ctext">ET</span></div>
-          <div class="cert-meta">Essential Tips — Alison<br><small style="color:var(--muted)">17 Sep 2025</small></div>
-        </a>
-
-        <a class="cert-card" href="Alison_Certificate-5559-17476218.pdf" target="_blank" rel="noopener">
-          <div class="cert-thumb"><img src="cert_thumb_5559.png" alt="Copywriting Mastery" onerror="this.style.display='none'"><span class="ctext">CM</span></div>
-          <div class="cert-meta">Copywriting Mastery — Alison<br><small style="color:var(--muted)">27 Sep 2025</small></div>
-        </a>
-
-        <a class="cert-card" href="OxforfHomeStudy.pdf" target="_blank" rel="noopener">
-          <div class="cert-thumb"><img src="cert_thumb_oxford.png" alt="AI for SEO" onerror="this.style.display='none'"><span class="ctext">OX</span></div>
-          <div class="cert-meta">AI for SEO — Oxford (Enrolled)<br><small style="color:var(--muted)">8 Oct 2025</small></div>
-        </a>
-      </div>
-    </aside>
-
-    <!-- MAIN -->
-    <main>
-      <section class="panel" aria-labelledby="about">
-        <h2 id="about">About</h2>
-        <p class="lead">I am an enthusiastic content writer and digital content specialist, particularly focused on keyword-optimized writing and copywriting. I have experience in crafting high-ranking tech articles, product descriptions, and landing pages. Additionally, I am skilled in SERP analysis, competitor research, working with AI tools, and creating long-form, SEO-focused content that strengthens brand authority and enhances user engagement. With a master's degree in Physics, I excel in analytical research and have a talent for simplifying complex concepts. I am also a passionate writer, storyteller, and content creator with a strong background in communication, education (specifically in science), and digital media. I enjoy crafting narratives across various platforms. My activities also include multimedia content production, photography, and documentary filmmaking. Overall, I can say that I live to write, and this is the joy of my life.</p>
-
-        <div class="section" id="experience">
-          <h2>Experience</h2>
-
-          <!-- UPDATED HERO STYLE: big, catchy, bold -->
-          <div class="job-hero" role="article" aria-label="Main job">
-            <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-              <div class="title">SEO Content Writer</div>
-              <div class="comp">AzarPixel &amp; SinaPlug (USA)</div>
-              <div class="date-pill">May 2024 – Present</div>
-            </div>
-            <div class="tagline">Driving organic growth with high quality, SERP focused long form content and product pages.</div>
-
-            <ul class="bullets">
-              <li>Produce SEO optimized articles, product pages and comprehensive guides informed by SERP and competitor research.</li>
-              <li>Optimize on page elements, metadata, information architecture and internal linking to improve CTR and ranking signals.</li>
-              <li>Create long form, research backed content that increases organic traffic, engagement and domain authority.</li>
-            </ul>
-          </div>
-          <!-- end job-hero -->
-
-          <div style="margin-top:12px;color:var(--muted);font-size:13px"><strong>Other Experiences</strong></div>
-          <ul style="color:var(--muted);line-height:1.55;margin:6px 0 0 18px">
-            <li>Onsala Space Observatory &amp; Chalmers — Content Creator &amp; Science Guide (June 2024)</li>
-            <li>Heritage of the Sky Project — Exhibition Narrator (2019–2020)</li>
-            <li>Pouya Mohaseb (Tehran) — Content Creator (2017–2019)</li>
-            <li>Andromeda Team — Science Presenter (2014–2019)</li>
-            <li>Tesla Science Magazine — Editorial Board &amp; Content Specialist (2014–2016)</li>
-          </ul>
-        </div>
-
-        <div class="section" id="education">
-          <h2>Education</h2>
-          <div style="color:var(--muted);font-size:13px">
-            <strong>M.Sc. in Physics (Cosmology)</strong>, Alzahra University, Tehran (2018–2021)<br>
-            <em>Thesis:</em> Classifying Galaxies from SKA Simulated Data using Machine Learning Algorithms
-          </div>
-        </div>
-
-        <div class="section" id="portfolio">
-          <h2>Portfolio — visual gallery</h2>
-          <div class="grid-portfolio" id="portfolio-grid">
-            <!-- AzarPixel -->
-            <div class="proj">
-              <div class="thumb">
-                <img src="thumb_azarpixel_top10.png" alt="Top 10 Speaker Brands" onerror="this.style.display='none'">
-                <div class="placeholder">Top 10<br>Speaker</div>
-              </div>
-              <div class="caption">
-                <a href="https://www.azarpixel.com/top-10-speaker-brands/" target="_blank">Top 10 Speaker Brands</a>
-                <p class="meta">AzarPixel — article, product roundup</p>
-              </div>
-            </div>
-
-            <div class="proj">
-              <div class="thumb">
-                <img src="thumb_azarpixel_transparent_led.png" alt="Transparent LED Displays" onerror="this.style.display='none'">
-                <div class="placeholder">Transparent<br>LED</div>
-              </div>
-              <div class="caption">
-                <a href="https://www.azarpixel.com/transparent-led-displays/" target="_blank">Transparent LED Displays</a>
-                <p class="meta">AzarPixel — product explainer</p>
-              </div>
-            </div>
-
-            <div class="proj">
-              <div class="thumb">
-                <img src="thumb_azarpixel_ptz.png" alt="PTZ Cameras" onerror="this.style.display='none'">
-                <div class="placeholder">PTZ</div>
-              </div>
-              <div class="caption">
-                <a href="https://www.azarpixel.com/what-are-ptz-cameras/" target="_blank">What Are PTZ Cameras?</a>
-                <p class="meta">AzarPixel — technical explainer</p>
-              </div>
-            </div>
-
-            <div class="proj">
-              <div class="thumb">
-                <img src="thumb_sinaplug_meanwell.png" alt="Meanwell Power Supplies" onerror="this.style.display='none'">
-                <div class="placeholder">Meanwell</div>
-              </div>
-              <div class="caption">
-                <a href="https://www.sinaplug.com/blogs/a/meanwell-lrs-rsp-power-supplies" target="_blank">Meanwell LRS/RSP Power Supplies</a>
-                <p class="meta">SinaPlug — product guide</p>
-              </div>
-            </div>
-
-            <div class="proj">
-              <div class="thumb">
-                <img src="thumb_sinaplug_video_processor.png" alt="LED Video Processors" onerror="this.style.display='none'">
-                <div class="placeholder">Video<br>Processor</div>
-              </div>
-              <div class="caption">
-                <a href="https://www.sinaplug.com/blogs/a/best-led-video-processor-brands" target="_blank">Best LED Video Processor Brands</a>
-                <p class="meta">SinaPlug — comparison piece</p>
-              </div>
-            </div>
-
-            <div class="proj">
-              <div class="thumb">
-                <img src="thumb_azarninja_cameras.png" alt="Home Security Cameras" onerror="this.style.display='none'">
-                <div class="placeholder">Home<br>Cameras</div>
-              </div>
-              <div class="caption">
-                <a href="https://azarninja.com/best-home-security-cameras-of-2025/" target="_blank">Best Home Security Cameras (2025)</a>
-                <p class="meta">AzarNinja — buyer's guide</p>
-              </div>
-            </div>
-
-            <div class="proj">
-              <div class="thumb">
-                <img src="thumb_azarninja_garage.png" alt="Garage Door Opener" onerror="this.style.display='none'">
-                <div class="placeholder">Garage<br>Opener</div>
-              </div>
-              <div class="caption">
-                <a href="https://azarninja.com/how-to-install-a-garage-door-opener/" target="_blank">How to Install a Garage Door Opener</a>
-                <p class="meta">AzarNinja — DIY guide</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="section" id="certs2">
-          <h2>Certificates</h2>
-          <p class="lead">Click a certificate to open or download the original PDF.</p>
-          <div style="display:flex;gap:12px;flex-wrap:wrap">
-            <a class="cert-card" href="Alison_Certificate-5231-17476218.pdf" target="_blank" rel="noopener">
-              <div class="cert-thumb"><img src="cert_thumb_5231.png" alt="Essential Tips" onerror="this.style.display='none'"><span style="font-weight:700;color:#90a5b6">ET</span></div>
-              <div class="cert-meta" style="padding-left:8px">Essential Tips for Copywriting — Alison<br><small style="color:var(--muted)">17 Sep 2025</small></div>
-            </a>
-
-            <a class="cert-card" href="Alison_Certificate-5559-17476218.pdf" target="_blank" rel="noopener">
-              <div class="cert-thumb"><img src="cert_thumb_5559.png" alt="Copywriting Mastery" onerror="this.style.display='none'"><span style="font-weight:700;color:#90a5b6">CM</span></div>
-              <div class="cert-meta" style="padding-left:8px">Copywriting Mastery — Alison<br><small style="color:var(--muted)">27 Sep 2025</small></div>
-            </a>
-
-            <a class="cert-card" href="OxforfHomeStudy.pdf" target="_blank" rel="noopener">
-              <div class="cert-thumb"><img src="cert_thumb_oxford.png" alt="Oxford" onerror="this.style.display='none'"><span style="font-weight:700;color:#90a5b6">OX</span></div>
-              <div class="cert-meta" style="padding-left:8px">AI for SEO Optimized Content Writing — Oxford (Enrolled)<br><small style="color:var(--muted)">8 Oct 2025</small></div>
-            </a>
-          </div>
-        </div>
-
-        <div class="section" id="tools">
-          <h2>Tools & Technical</h2>
-          <div style="color:var(--muted);font-size:13px">Microsoft Office, LaTeX, Photoshop, CapCut — ChatGPT (GPT-4), Grammarly, Canva, Copy.ai, Wordtune — Python</div>
-        </div>
-
-        <div class="section" id="refs">
-          <h2>References</h2>
-          <div style="color:var(--muted);font-size:13px">
-            Saeed Jafari — External Relations Manager, UNESCO — <a href="mailto:saeed.jafari@spacegeneration.org">saeed.jafari@spacegeneration.org</a><br>
-            MJ Shahhoseini — Chalmers University & Onsala Space Observatory — <a href="mailto:mj.shahhoseini@chalmers.se">mj.shahhoseini@chalmers.se</a> • +46 736 415 264<br>
-            Elham Salmanzadeh — Andromeda Daily Astronomy Team — <a href="mailto:salmanzadeheli@gmail.com">salmanzadeheli@gmail.com</a>
-          </div>
-        </div>
-
-        <footer style="margin-top:8px;color:var(--muted)">© Parvin Howaida — Portfolio</footer>
-      </section>
-    </main>
-  </div>
-
-  <script>
-    // Improve visuals: if image fails to load we show the placeholder by leaving .placeholder visible.
-    // We hide placeholder when an image loads successfully.
-    document.addEventListener('DOMContentLoaded', ()=> {
-      document.querySelectorAll('.thumb img, .cert-thumb img').forEach(img=>{
-        img.addEventListener('load', () => {
-          const parent = img.closest('.thumb, .cert-thumb');
-          if(parent){
-            const ph = parent.querySelector('.placeholder');
-            if(ph) ph.style.display = 'none';
-            img.style.display = 'block';
-          }
-        });
-        img.addEventListener('error', () => {
-          img.style.display = 'none';
-        });
-      });
-    });
-  </script>
+</div>
 </body>
 </html>
