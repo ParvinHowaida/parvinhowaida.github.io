@@ -3,96 +3,101 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+<!-- SEO: title & description focused on name + role -->
 <title>Parvin Howaida — SEO Content Writer & Digital Content Specialist</title>
-<meta name="description" content="Parvin Howaida — SEO content writer specializing in long form SEO, product pages and technical to human content. Portfolio, certificates and CV." />
+<meta name="description" content="Parvin Howaida — SEO content writer specialized in long-form SEO, product pages and technical-to-human content. Portfolio, certificates and CV." />
 <meta name="author" content="Parvin Howaida" />
 <link rel="icon" href="data:;base64,iVBORw0KGgo=">
 
+<!-- Canonical (set to your site canonical path) -->
+<link rel="canonical" href="https://parvinhowaida.github.io/" />
+
+<!-- Open Graph / Twitter Card for better preview when shared -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="Parvin Howaida — SEO Content Writer & Digital Content Specialist" />
+<meta property="og:description" content="SEO content writer specialized in long-form SEO, product pages and technical-to-human content. Portfolio, certificates and CV." />
+<meta property="og:url" content="https://parvinhowaida.github.io/" />
+<meta property="og:site_name" content="Parvin Howaida — Portfolio" />
+<meta property="og:image" content="Picture12.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Parvin Howaida — SEO Content Writer" />
+<meta name="twitter:description" content="SEO content writer specialized in long-form SEO, product pages and technical-to-human content. Portfolio, certificates and CV." />
+<meta name="twitter:image" content="Picture12.png" />
+
+<!-- Robots: allow indexing -->
+<meta name="robots" content="index,follow" />
+
+<!-- Structured data (JSON-LD): Person + sameAs authoritative profiles -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Parvin Howaida",
+  "alternateName": "Parvin Howaida — SEO Content Writer",
+  "url": "https://parvinhowaida.github.io/",
+  "jobTitle": "SEO Content Writer & Digital Content Specialist",
+  "image": "https://parvinhowaida.github.io/Picture12.png",
+  "email": "mailto:p.howaida@gmail.com",
+  "sameAs": [
+    "https://scholar.google.com/citations?hl=en&user=kDotrPcAAAAJ",
+    "https://www.researchgate.net/profile/Parvin-Howaida-2",
+    "https://orcid.org/0000-0001-5002-675X",
+    "https://www.youtube.com/@Pari_in_Bookland"
+  ],
+  "description": "SEO content writer specialized in long-form SEO, product pages, technical-to-human content, and content strategy. Holds an M.Sc. in Physics (Cosmology)."
+}
+</script>
+
+<!-- Styles & layout (kept your bright theme and layout) -->
 <style>
   :root{
     --bg:#fbfdff;
     --card:#ffffff;
     --muted:#556077;
-    --accent:#0b84ff;            /* blue for primary actions */
-    --researchgate:#0b84ff;     /* ResearchGate-like teal for other links #00bfa5 */
+    --accent:#0b84ff;
+    --researchgate:#00bfa5;
     --teal:#04bfb0;
     --radius:14px;
     --soft-border: #e6eef6;
     font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     color-scheme: light;
   }
-
   *{box-sizing:border-box}
   html,body{height:100%;margin:0;background:linear-gradient(180deg,#fbfdff,#f6f9fb); color:#0f1724; padding:24px; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
   a{color:var(--accent)}
   .wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:start;}
-
-  /* SIDEBAR */
   .card{background:var(--card);border-radius:var(--radius);padding:18px;border:1px solid var(--soft-border);box-shadow:0 10px 30px rgba(16,32,51,0.04)}
   .photo{display:flex;justify-content:center;margin-bottom:12px}
   .photo img{width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid #fff;box-shadow:0 6px 18px rgba(16,32,51,0.06)}
   h1{margin:8px 0 4px;font-size:20px}
   .role{color:var(--muted);font-size:13px;margin-bottom:12px}
   .contact{font-size:14px;color:var(--muted);line-height:1.45;margin-bottom:10px}
-  .contact a{color:var(--accent);text-decoration:none}
   .pill{background:#eef9ff;color:var(--accent);padding:6px 12px;border-radius:999px;font-weight:600;font-size:13px;display:inline-block;margin:8px 0}
-
   .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
   .skill{background:#f3f8ff;padding:8px 10px;border-radius:999px;font-size:12px;color:var(--muted);border:1px solid #eef6fb}
-
-  .btn{
-    display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent), #0cc2ff);color:#fff;text-decoration:none;font-weight:700;
-    box-shadow:0 6px 18px rgba(11,132,255,0.12);border:0;transition:transform .18s ease,box-shadow .18s ease;
-  }
+  .btn{display:inline-block;margin-top:14px;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent), #0cc2ff);color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 18px rgba(11,132,255,0.12);border:0;transition:transform .18s ease,box-shadow .18s ease;}
   .btn:hover{transform:translateY(-3px);box-shadow:0 16px 40px rgba(11,132,255,0.12)}
-
-  /* Link buttons group */
   .link-buttons{display:flex;flex-direction:column;gap:10px;margin-top:12px}
-  .link-buttons a{
-    display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;text-decoration:none;color:#fff;font-weight:700;
-    transition:transform .18s ease,opacity .18s ease;
-  }
+  .link-buttons a{display:inline-flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;text-decoration:none;color:#fff;font-weight:700;transition:transform .18s ease,opacity .18s ease;}
   .link-google{background:linear-gradient(90deg,#2b84ff,#1680ff);box-shadow:0 8px 22px rgba(11,132,255,0.08)}
   .link-research{background:linear-gradient(90deg,var(--researchgate), #1ecfaf);box-shadow:0 8px 22px rgba(0,191,165,0.08)}
   .link-orcid{background:linear-gradient(90deg,#0bb39f,#10c8b0);box-shadow:0 8px 22px rgba(11,179,160,0.08)}
-  .link-youtube{background:linear-gradient(90deg,#06b39a,#08c2a6);box-shadow:0 8px 22px rgba(6,179,160,0.06)} /* use researchgate color for this group style */
+  .link-youtube{background:linear-gradient(90deg,#06b39a,#08c2a6);box-shadow:0 8px 22px rgba(6,179,160,0.06)}
   .link-google:hover,.link-research:hover,.link-orcid:hover,.link-youtube:hover{transform:translateY(-3px);opacity:.95}
-
-  .links-list{margin-top:12px;font-size:14px}
-  .links-list a{display:block;color:var(--accent);text-decoration:none;margin:6px 0;font-weight:600}
-
-  /* Certificates in sidebar (single source of truth) */
   .cert-list{margin-top:14px;display:flex;flex-direction:column;gap:10px}
   .cert-item{display:flex;gap:10px;align-items:center;background:#fff;border-radius:8px;padding:8px;border:1px solid #eef6fb}
   .cert-thumb{width:84px;height:60px;flex:0 0 84px;border-radius:6px;background:linear-gradient(135deg,#f7fbff,#eef9ff);display:flex;align-items:center;justify-content:center;color:#90a5b6;font-weight:700;font-size:13px;overflow:hidden}
   .cert-thumb img{width:100%;height:100%;object-fit:cover;display:block}
   .cert-meta{font-size:13px;color:var(--muted)}
-  .cert-item a{color:#1b6fb8;text-decoration:none;font-weight:600}
-
-  /* MAIN */
   main{min-height:400px}
   .panel{background:var(--card);border-radius:var(--radius);padding:22px;border:1px solid var(--soft-border);box-shadow:0 10px 30px rgba(16,32,51,0.04)}
   h2{margin:0 0 10px;font-size:18px}
   .lead{color:var(--muted);font-size:15px;margin-bottom:14px; text-align:justify}
   .section{margin-bottom:22px}
-
-  /* JOB HERO (kept) */
-  .job-hero{
-    display:flex; flex-direction:column; gap:10px;
-    padding:18px; border-radius:12px;
-    background: linear-gradient(90deg, rgba(11,132,255,0.04), rgba(4,191,176,0.02));
-    border:1px solid rgba(11,132,255,0.06);
-    box-shadow: 0 10px 30px rgba(11,132,255,0.03);
-    margin-bottom:12px;
-  }
-  .job-hero .title{font-size:20px; font-weight:800; color:#052e40; display:flex; align-items:center; gap:12px; flex-wrap:wrap;}
-  .job-hero .comp{font-size:14px; color:var(--accent); font-weight:700; background:rgba(11,132,255,0.06); padding:6px 10px; border-radius:8px;}
-  .job-hero .date-pill{margin-left:auto;background:#fff;padding:6px 10px;border-radius:999px;border:1px solid rgba(11,132,255,0.06);font-weight:700;color:var(--muted);font-size:13px}
-  .job-hero .bullets{margin:0;padding-left:18px;color:var(--muted);line-height:1.55}
-  .job-hero .bullets li{margin-bottom:8px; position:relative; padding-left:22px}
-  .job-hero .bullets li::before{content: "✓"; position:absolute; left:0; top:0; color:var(--teal); font-weight:700; font-size:14px; line-height:1;}
-
-  /* Portfolio gallery */
+  .job-hero{display:flex; flex-direction:column; gap:10px;padding:18px; border-radius:12px;background: linear-gradient(90deg, rgba(11,132,255,0.04), rgba(4,191,176,0.02));border:1px solid rgba(11,132,255,0.06);box-shadow: 0 10px 30px rgba(11,132,255,0.03);margin-bottom:12px;}
+  .job-hero .title{font-size:20px; font-weight:800; color:#052e40}
   .grid-portfolio{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
   .proj{background:#fff;border-radius:10px;border:1px solid #eef6fb;overflow:hidden;transition:transform .22s cubic-bezier(.2,.9,.3,1),box-shadow .22s ease}
   .proj:hover{transform:translateY(-8px);box-shadow:0 20px 60px rgba(16,32,51,0.07)}
@@ -102,9 +107,6 @@
   .thumb .placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:700;color:#9fb2c6;font-size:20px;text-align:center;padding:12px}
   .caption{padding:12px 14px;border-top:1px solid #f5f9fb}
   .caption a{color:var(--accent);text-decoration:none;font-weight:700}
-  .caption p{margin:6px 0 0;color:var(--muted);font-size:13px}
-
-  /* small screens improvements */
   @media (max-width:900px){
     .wrap{grid-template-columns:1fr;padding:0 12px;gap:18px;}
     .photo img{width:96px;height:96px}
@@ -113,17 +115,14 @@
     .grid-portfolio{grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
     main{padding-bottom:60px}
   }
-
-  /* accessibility focus */
   a:focus{outline:3px solid rgba(11,132,255,0.12);outline-offset:3px}
-
 </style>
 </head>
 <body>
   <div class="wrap">
     <!-- SIDEBAR -->
     <aside class="card" aria-label="Profile card">
-      <div class="photo"><img src="Picture12.png" alt="Parvin Howaida" id="profileImg"></div>
+      <div class="photo"><img src="Picture12.png" alt="Parvin Howaida — profile photo" id="profileImg"></div>
       <h1>Parvin Howaida</h1>
       <div class="role">SEO Content Writer & Digital Content Specialist</div>
 
@@ -147,7 +146,6 @@
 
       <a class="btn" href="CV_Parvin HowaidaV3.pdf" download>Download My CV (PDF)</a>
 
-      <!-- Link buttons (styled, consistent) -->
       <div class="link-buttons" aria-label="External profiles">
         <a class="link-google" href="https://scholar.google.com/citations?hl=en&user=kDotrPcAAAAJ" target="_blank" rel="noopener" title="Google Scholar">Google Scholar</a>
         <a class="link-research" href="https://www.researchgate.net/profile/Parvin-Howaida-2?ev=hdr_xprf" target="_blank" rel="noopener" title="ResearchGate">ResearchGate</a>
@@ -158,24 +156,23 @@
       <!-- Certificates (sidebar only) -->
       <div style="margin-top:14px;color:var(--muted);font-size:13px"><strong>Certificates</strong></div>
       <div class="cert-list" id="certList">
-        <!-- Rendered by JS when thumbnails available; fallback to text link if not -->
         <div class="cert-item">
-          <div class="cert-thumb"><img src="Alison_Certificate-5231-17476218-1.png" alt="Essential Tips" onerror="this.style.display='none'"></div>
+          <div class="cert-thumb"><img src="Alison_Certificate-5231-17476218-1.png" alt="Essential Tips certificate thumbnail" onerror="this.style.display='none'"></div>
           <div class="cert-meta"><a href="Alison_Certificate-5231-17476218.pdf" target="_blank">Essential Tips for Copywriting — Alison</a><br><small style="color:var(--muted)">17 Sep 2025</small></div>
         </div>
 
         <div class="cert-item">
-          <div class="cert-thumb"><img src="Alison_Certificate-5559-17476218-1.png" alt="Copywriting Mastery" onerror="this.style.display='none'"></div>
+          <div class="cert-thumb"><img src="Alison_Certificate-5559-17476218-1.png" alt="Copywriting Mastery certificate thumbnail" onerror="this.style.display='none'"></div>
           <div class="cert-meta"><a href="Alison_Certificate-5559-17476218.pdf" target="_blank">Copywriting Mastery — Alison</a><br><small style="color:var(--muted)">27 Sep 2025</small></div>
         </div>
 
         <div class="cert-item">
-          <div class="cert-thumb"><img src="OxforfHomeStudy-1.png" alt="AI for SEO" onerror="this.style.display='none'"></div>
+          <div class="cert-thumb"><img src="OxforfHomeStudy-1.png" alt="AI for SEO certificate thumbnail" onerror="this.style.display='none'"></div>
           <div class="cert-meta"><a href="OxforfHomeStudy.pdf" target="_blank">AI for SEO — Oxford (Enrolled)</a><br><small style="color:var(--muted)">8 Oct 2025</small></div>
         </div>
 
         <div class="cert-item">
-          <div class="cert-thumb"><img src="Writing Matsr Class _ GARNET:UNESCO.png" alt="Writing Master Class" onerror="this.style.display='none'"></div>
+          <div class="cert-thumb"><img src="Writing Matsr Class _ GARNET:UNESCO.png" alt="Writing Master Class certificate thumbnail" onerror="this.style.display='none'"></div>
           <div class="cert-meta"><a href="Writing Matsr Class _ GARNET:UNESCO.jpg" target="_blank">Writing Master Class — GARNET/UNESCO</a><br><small style="color:var(--muted)">7 Mar 2025</small></div>
         </div>
       </div>
@@ -185,12 +182,10 @@
     <main>
       <section class="panel" aria-labelledby="about">
         <h2 id="about">About</h2>
-        <p class="lead">I am an SEO specialist, enthusiastic content writer and digital content expert, particularly focused on keyword optimized writing and copywriting. I have experience in crafting high ranking tech articles, product descriptions, and landing pages. Additionally, I am skilled in SERP analysis, competitor research, working with AI tools, and creating long-form, SEO optimized content that strengthens brand authority and enhances user engagement. With a master's degree in Physics, I excel in analytical research and have a talent for simplifying complex concepts. I am also a passionate writer, storyteller, and content creator with a strong background in communication, education (specifically in science), and digital media. I enjoy crafting narratives across various platforms. My activities also include multimedia content production, photography, and documentary filmmaking.</p>
+        <p class="lead">I am an SEO specialist, enthusiastic content writer and digital content expert, particularly focused on keyword-optimized writing and copywriting. I have experience in crafting high-ranking tech articles, product descriptions, and landing pages. Additionally, I am skilled in SERP analysis, competitor research, working with AI tools, and creating long-form, SEO-optimized content that strengthens brand authority and enhances user engagement. With a master's degree in Physics, I excel in analytical research and have a talent for simplifying complex concepts. I am also a passionate writer, storyteller, and content creator with a strong background in communication, education (specifically in science), and digital media.</p>
 
         <div class="section" id="experience">
           <h2>Experiences</h2>
-
-          <!-- JOB HERO -->
           <div class="job-hero" role="article" aria-label="Main job">
             <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
               <div class="title">SEO Content Writer</div>
@@ -198,7 +193,6 @@
               <div class="date-pill">May 2024 – Present</div>
             </div>
             <div class="tagline">Driving organic growth with high quality, SERP focused long form content and product pages.</div>
-
             <ul class="bullets">
               <li>Produce SEO optimized articles, product pages and comprehensive guides informed by SERP and competitor research.</li>
               <li>Optimize on page elements, metadata, information architecture and internal linking to improve CTR and ranking signals.</li>
@@ -227,69 +221,69 @@
         <div class="section" id="portfolio">
           <h2>Article Portfolio</h2>
           <div class="grid-portfolio" id="portfolio-grid">
-            <!-- Use uploaded thumbnails in /Link_Thumbnails/ (you uploaded these files) -->
+            <!-- thumbnails in /Link_Thumbnails/ used here -->
             <div class="proj">
               <div class="thumb">
-                <img src="Link_Thumbnails/top-10-speaker-brands.jpg.png" alt="Top 10 Speaker Brands" onerror="thumbFallback(this)">
+                <img src="Link_Thumbnails/top-10-speaker-brands.jpg.png" alt="Top 10 Speaker Brands – thumbnail" onerror="thumbFallback(this)">
                 <div class="placeholder">Top 10 Speaker</div>
               </div>
               <div class="caption">
-                <a href="https://www.azarpixel.com/top-10-speaker-brands/" target="_blank">Top 10 Speaker Brands</a>
+                <a href="https://www.azarpixel.com/top-10-speaker-brands/" target="_blank" rel="noopener">Top 10 Speaker Brands</a>
                 <p class="meta">AzarPixel — article, product roundup</p>
               </div>
             </div>
 
             <div class="proj">
               <div class="thumb">
-                <img src="Link_Thumbnails/Transparent LED Displays and Their Benefits.png" alt="Transparent LED Displays" onerror="thumbFallback(this)">
+                <img src="Link_Thumbnails/Transparent LED Displays and Their Benefits.png" alt="Transparent LED Displays – thumbnail" onerror="thumbFallback(this)">
                 <div class="placeholder">Transparent LED</div>
               </div>
               <div class="caption">
-                <a href="https://www.azarpixel.com/transparent-led-displays/" target="_blank">Transparent LED Displays</a>
+                <a href="https://www.azarpixel.com/transparent-led-displays/" target="_blank" rel="noopener">Transparent LED Displays</a>
                 <p class="meta">AzarPixel — product explainer</p>
               </div>
             </div>
 
             <div class="proj">
               <div class="thumb">
-                <img src="Link_Thumbnails/ptz-cameras.png" alt="PTZ Cameras" onerror="thumbFallback(this)">
+                <img src="Link_Thumbnails/ptz-cameras.png" alt="PTZ Cameras – thumbnail" onerror="thumbFallback(this)">
                 <div class="placeholder">PTZ</div>
               </div>
               <div class="caption">
-                <a href="https://www.azarpixel.com/what-are-ptz-cameras/" target="_blank">What Are PTZ Cameras?</a>
+                <a href="https://www.azarpixel.com/what-are-ptz-cameras/" target="_blank" rel="noopener">What Are PTZ Cameras?</a>
                 <p class="meta">AzarPixel — technical explainer</p>
               </div>
             </div>
 
             <div class="proj">
               <div class="thumb">
-                <img src="Link_Thumbnails/Best Home security Cameras.png" alt="Home Security Cameras" onerror="thumbFallback(this)">
+                <img src="Link_Thumbnails/Best Home security Cameras.png" alt="Best Home Security Cameras – thumbnail" onerror="thumbFallback(this)">
                 <div class="placeholder">Home Cameras</div>
               </div>
               <div class="caption">
-                <a href="https://azarninja.com/best-home-security-cameras-of-2025/" target="_blank">Best Home Security Cameras (2025)</a>
+                <a href="https://azarninja.com/best-home-security-cameras-of-2025/" target="_blank" rel="noopener">Best Home Security Cameras (2025)</a>
                 <p class="meta">AzarNinja — buyer's guide</p>
               </div>
             </div>
 
             <div class="proj">
               <div class="thumb">
-                <img src="Link_Thumbnails/MeanWell_LRS___RSP_Series_Power_Supplies.png" alt="Meanwell Power Supplies" onerror="thumbFallback(this)">
+                <img src="Link_Thumbnails/MeanWell_LRS___RSP_Series_Power_Supplies.png" alt="MeanWell Power Supplies – thumbnail" onerror="thumbFallback(this)">
                 <div class="placeholder">Meanwell</div>
               </div>
               <div class="caption">
-                <a href="https://www.sinaplug.com/blogs/a/meanwell-lrs-rsp-power-supplies" target="_blank">Meanwell Power Supplies</a>
+                <a href="https://www.sinaplug.com/blogs/a/meanwell-lrs-rsp-power-supplies" target="_blank" rel="noopener">Meanwell Power Supplies</a>
                 <p class="meta">SinaPlug — product guide</p>
               </div>
             </div>
 
             <div class="proj">
               <div class="thumb">
-                <img src="Link_Thumbnails/How to Install a Garage Door Opener.png" alt="Garage Door Opener" onerror="thumbFallback(this)">
+                <img src="Link_Thumbnails/How to Install a Garage Door Opener.png" alt="Garage Door Opener – thumbnail" onerror="thumbFallback(this)">
                 <div class="placeholder">Garage Opener</div>
               </div>
               <div class="caption">
-                <a href="https://azarninja.com/how-to-install-a-garage-door-opener/" target="_blank">How to Install a Garage Door Opener</a>
+                <a href="https://azarninja.com/how-to-install-a-garage-door-opener/" target="_blank" rel="noopener">How to Install a Garage Door Opener</a>
                 <p class="meta">AzarNinja — DIY guide</p>
               </div>
             </div>
@@ -297,11 +291,9 @@
           </div>
         </div>
 
-   
-
         <div class="section" id="tools">
           <h2>Tools & Technical</h2>
-          <div style="color:var(--muted);font-size:13px">Microsoft Office, LaTeX - Photoshop, CorelDRAW, CapCut — ChatGPT, Grammarly, Canva, Copy.ai, Wordtune — Python</div>
+          <div style="color:var(--muted);font-size:13px">Microsoft Office, LaTeX — Photoshop, CorelDRAW, CapCut — ChatGPT (GPT-4), Grammarly, Canva, Copy.ai — Python</div>
         </div>
 
         <div class="section" id="refs">
@@ -319,7 +311,7 @@
   </div>
 
   <script>
-    /* thumbnail fallback: if image can't load, hide it and keep placeholder visible */
+    /* Thumbnail fallback: hide broken image and leave placeholder visible */
     function thumbFallback(img){
       try{
         img.style.display = 'none';
@@ -331,7 +323,6 @@
       }catch(e){}
     }
 
-    // Ensure placeholders hide when an image successfully loads
     document.addEventListener('DOMContentLoaded', ()=>{
       document.querySelectorAll('.thumb img, .cert-thumb img, #profileImg').forEach(img=>{
         img.addEventListener('load', ()=>{
@@ -343,13 +334,10 @@
           }
         });
         img.addEventListener('error', ()=>{
-          // If profile image fails, remove to avoid huge blank
           if(img.id === 'profileImg'){ img.style.display='none'; return; }
           img.style.display = 'none';
         });
       });
-
-      // Accessibility: if JS can't find thumbnails, they remain as-is (fallback)
     });
   </script>
 </body>
