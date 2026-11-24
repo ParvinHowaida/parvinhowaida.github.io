@@ -111,13 +111,13 @@
 
     .section-label {
       margin: 0 0 16px;
-      font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: -0.01em;
     }
 
-    /* Story / Bio — slightly smaller, classic literary serif */
+    /* Story / Bio */
     .story p {
       margin: 0 0 14px;
       color: var(--ink);
@@ -138,6 +138,44 @@
       padding: 3px 9px 2px 0;
       color: var(--accent);
       font-weight: 600;
+    }
+
+    /* Links & Buttons */
+    .links-heading {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .button-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 11px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 18px;
+      border-radius: 11px;
+      background: var(--accent);
+      color: var(--accent-text);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 18px rgba(20, 16, 13, 0.14);
+    }
+
+    .btn--cv {
+      background: #3d3127;
     }
 
     /* Books */
@@ -174,11 +212,11 @@
       object-fit: cover;
     }
 
-    .book-tag {
+    .badge {
       display: inline-block;
       background: var(--badge-bg);
       color: var(--muted);
-      font-size: 0.75rem;
+      font-size: 0.74rem;
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: uppercase;
@@ -189,19 +227,50 @@
 
     .book-title {
       margin: 0 0 8px;
-      font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+      font-family: "Cormorant Garamond", Georgia, serif;
       font-size: 1.45rem;
       font-weight: 600;
       line-height: 1.25;
       color: var(--ink);
     }
 
-    .book-note {
+    .book-note,
+    .talk-summary {
       margin: 0 0 14px;
       color: var(--muted);
-      font-family: "Lora", Georgia, "Times New Roman", serif;
+      font-family: "Lora", Georgia, serif;
       font-size: 0.9rem;
       line-height: 1.65;
+    }
+
+    /* Presentations */
+    .talk-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 20px 22px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .talk-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 26px rgba(34, 29, 24, 0.06);
+    }
+
+    .talk-title {
+      margin: 0 0 8px;
+      font-family: "Cormorant Garamond", Georgia, serif;
+      font-size: 1.42rem;
+      font-weight: 600;
+      line-height: 1.3;
+      color: var(--ink);
+    }
+
+    .talk-meta {
+      margin: 0 0 10px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--muted);
     }
 
     .text-link {
@@ -220,44 +289,6 @@
     .text-link:hover {
       border-bottom-color: var(--accent);
       opacity: 0.85;
-    }
-
-    /* Buttons */
-    .links-heading {
-      text-align: center;
-      margin-bottom: 16px;
-    }
-
-    .button-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 11px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 11px 18px;
-      border-radius: 11px;
-      background: var(--accent);
-      color: var(--accent-text);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      transition: background-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
-    }
-
-    .btn:hover {
-      background: var(--accent-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 18px rgba(20, 16, 13, 0.14);
-    }
-
-    .btn--cv {
-      background: #3d3127;
     }
 
     /* Contact */
@@ -333,21 +364,6 @@
         <p>Writing gives my life purpose and joy. Whenever I write, I feel more connected to the world and to the stories worth telling.</p>
       </section>
 
-      <section class="section" aria-label="My Books">
-        <h2 class="section-label">My Books</h2>
-        <div class="book-card">
-          <a class="book-cover-link" href="https://sabzanbook.com/product/%d9%86%d8%ac%d9%88%d9%85-%d8%b1%d8%a7%d8%af%db%8c%d9%88%db%8c%db%8c/" target="_blank" rel="noopener">
-            <img src="Mybook_Radio_Astronomy.webp" alt="نجوم رادیویی book cover" class="book-cover" />
-          </a>
-          <div>
-            <span class="book-tag">Translation · Astronomy</span>
-            <h3 class="book-title">نجوم رادیویی (Radio Astronomy)</h3>
-            <p class="book-note">English-to-Persian translation making astronomy accessible to general readers and young scholars.</p>
-            <a class="text-link" href="https://sabzanbook.com/product/%d9%86%d8%ac%d9%88%d9%85-%d8%b1%d8%a7%d8%af%db%8c%d9%88%db%8c%db%8c/" target="_blank" rel="noopener">View Book on Sabzan Book →</a>
-          </div>
-        </div>
-      </section>
-
       <section class="section" aria-label="Links and CV">
         <h2 class="section-label links-heading">See More of my work here:</h2>
         <div class="button-grid">
@@ -356,6 +372,32 @@
           <a class="btn" href="https://t.me/ketabbedasttt" target="_blank" rel="noopener">Telegram Channel</a>
           <a class="btn btn--cv" href="CV_Parvin HowaidaV3.pdf" download>Download my CV</a>
         </div>
+      </section>
+
+      <section class="section" aria-label="My Books">
+        <h2 class="section-label">My Books</h2>
+        <div class="book-card">
+          <a class="book-cover-link" href="https://sabzanbook.com/product/%d9%86%d8%ac%d9%88%d9%85-%d8%b1%d8%a7%d8%af%db%8c%d9%88%db%8c%db%8c/" target="_blank" rel="noopener">
+            <img src="Mybook_Radio_Astronomy.webp" alt="نجوم رادیویی book cover" class="book-cover" />
+          </a>
+          <div>
+            <span class="badge">Translation · Astronomy</span>
+            <h3 class="book-title">نجوم رادیویی (Radio Astronomy)</h3>
+            <p class="book-note">English-to-Persian translation making astronomy accessible to general readers and young scholars.</p>
+            <a class="text-link" href="https://sabzanbook.com/product/%d9%86%d8%ac%d9%88%d9%85-%d8%b1%d8%a7%d8%af%db%8c%d9%88%db%8c%db%8c/" target="_blank" rel="noopener">View Book on Sabzan Book →</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Latest Presentations">
+        <h2 class="section-label">Latest Presentations</h2>
+        <article class="talk-card">
+          <span class="badge">IAU CAP 2026 · Talk</span>
+          <h3 class="talk-title">Starlight &amp; Storytelling: How Science-Fiction Writers Illuminate the Cosmos for Diverse Audiences</h3>
+          <p class="talk-meta">CAP2026 – Parallel Session Day 4-T13 · Starts at 53:00</p>
+          <p class="talk-summary">Exploring how science fiction and storytelling make cosmic concepts emotionally resonant, accessible, and inspiring across cultures and audiences.</p>
+          <a class="text-link" href="https://youtu.be/Nv2m2dethEg?si=eMlhmm45Lu1xTV3-&t=3180" target="_blank" rel="noopener">Watch Talk on YouTube (from 53:00) →</a>
+        </article>
       </section>
 
       <footer class="contact">
